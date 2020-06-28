@@ -1,0 +1,20 @@
+.share {
+  background: transparent;
+  border: none;
+  display: block;
+  filter: drop-shadow(rgb(34, 34, 34) 0px 1px 8px);
+  left: 8px;
+  position: absolute;
+  top: 32px;
+  z-index: 999;
+}
+
+.share:hover {
+  cursor: pointer;
+}
+
+.share svg {
+  fill: #fff;
+  height: 24px;
+  width: 24px;
+}

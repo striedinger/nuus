@@ -1,0 +1,84 @@
+/*
+story media
+story text - 9
+controls - 99
+CTAs (progress/see more/share/overlay) - 999
+*/
+
+.story {
+  display: flex;
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: flex-end;
+  width: inherit;
+}
+
+.meta {
+  color: #fff;
+  margin: 10px;
+  text-align: center;
+  z-index: 9;
+}
+
+.meta * {
+  text-shadow: 2px 2px 20px #000;
+}
+
+.media {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.media img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.more {
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 999;
+}
+
+.more-link {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.more-icon,
+.more-text {
+  color: #fff;
+}
+
+.more-icon:hover,
+.more-text:hover {
+  cursor: pointer;
+}
+
+.more-icon {
+  filter: drop-shadow(#000 0px 0px 5px);
+}
+
+.more-text {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}

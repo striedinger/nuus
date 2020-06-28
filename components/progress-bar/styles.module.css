@@ -1,0 +1,24 @@
+.progress-bar {
+  box-sizing: border-box;
+  display: flex;
+  filter: drop-shadow(rgb(34, 34, 34) 0px 1px 8px);
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+.bar {
+  background: rgb(85, 85, 85);
+  border-radius: 2px;
+  flex: 1;
+  height: 2px;
+}
+
+.bar.seen {
+  background: #fff;
+}
+
+.bar:not(:last-child) {
+  margin-right: 4px;
+}
